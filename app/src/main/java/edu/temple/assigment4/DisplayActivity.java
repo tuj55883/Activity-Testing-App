@@ -17,6 +17,9 @@ public class DisplayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
 
+        //Sets header
+        setTitle("Display");
+
         //this just goes through ands sets the text and image
         //to the selected bean
         textView = findViewById(R.id.textView);

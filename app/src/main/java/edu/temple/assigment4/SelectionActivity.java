@@ -25,6 +25,9 @@ public class SelectionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Sets header
+        setTitle("Selection Menu");
+
         //Sets the view to their id
         spinner = findViewById(R.id.spinner);
 

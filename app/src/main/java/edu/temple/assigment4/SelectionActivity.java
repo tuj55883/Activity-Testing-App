@@ -14,22 +14,20 @@ public class SelectionActivity extends AppCompatActivity {
 
     //Initializes the views we will use
     Spinner spinner;
-    //ImageView image_view;
     int[] bean_res_id;
     CustomAdapter adapter;
     String[] bean_array;
 
-    //TextView textView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Sets the views to their ids
-        //image_view = findViewById(R.id.image_view);
+        //Sets the view to their id
         spinner = findViewById(R.id.spinner);
-        //textView = findViewById(R.id.textView);
+
 
         //Makes the array of beans we use and the other array are the images
         bean_array = new String[]{"Please Pick A Bean","Kidney Bean", "Black Bean", "Green Bean", "Mung Bean", "Pinto Bean"};
@@ -52,12 +50,10 @@ public class SelectionActivity extends AppCompatActivity {
 
                 //show_image(position);
                 if(position>0) {//Makes sure something is selected
+                    //When something is selected it launches the image activity
                     launchIntent.putExtra("EXTRA_POSITION", position);
                     startActivity(launchIntent);
                 }
-                //else {
-                //    textView.setText(" ");
-                //}
             }
 
             @Override
@@ -69,14 +65,10 @@ public class SelectionActivity extends AppCompatActivity {
 
 
     }
-    //Quick function to set image
-    private void show_image(int position) {
-        //image_view.setImageResource(bean_res_id[position]);
-    }
 
     public void onResume() {
         super.onResume();
-
+        //When the user exits the image activity this just resets the spinner
         String[] bean_array = new String[]{"Please Pick A Bean","Kidney Bean", "Black Bean", "Green Bean", "Mung Bean", "Pinto Bean"};
         bean_res_id = new int[]{R.drawable.empty,R.drawable.bean,R.drawable.black_bean,R.drawable.green_bean,R.drawable.mung_bean,R.drawable.pinto};
         CustomAdapter adapter = new CustomAdapter(this, bean_array,bean_res_id);

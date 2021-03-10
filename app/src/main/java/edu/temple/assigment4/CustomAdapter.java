@@ -45,7 +45,21 @@ public class CustomAdapter extends BaseAdapter  {
         textView.setTextSize(22);
         textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         textView.setPadding(10,8,0,8);
+
+
+
+
+
+
+
+        //This sets the image to the left of the text
+        Drawable img =context.getDrawable(bean_res_id[position]);
+        img.setBounds(0, 0, 50, 50);
+        textView.setBackgroundResource(bean_res_id[position]);
+
+
         return textView;
+
     }
 
     @Override

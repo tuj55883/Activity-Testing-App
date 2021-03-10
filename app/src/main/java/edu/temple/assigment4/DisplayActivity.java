@@ -25,8 +25,8 @@ public class DisplayActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         imageView = findViewById(R.id.imageView);
 
-        String[] bean_array = new String[]{"Please Pick A Bean","Kidney Bean", "Black Bean", "Green Bean", "Mung Bean", "Pinto Bean"};
-        int[] bean_res_id = new int[]{R.drawable.empty, R.drawable.bean, R.drawable.black_bean, R.drawable.green_bean, R.drawable.mung_bean, R.drawable.pinto};
+        String[] bean_array = new String[]{"Kidney Bean", "Black Bean", "Green Bean", "Mung Bean", "Pinto Bean"};
+        int[] bean_res_id = new int[]{R.drawable.bean, R.drawable.black_bean, R.drawable.green_bean, R.drawable.mung_bean, R.drawable.pinto};
         
         Intent intent = getIntent();
         int position = intent.getIntExtra("EXTRA_POSITION", 0);

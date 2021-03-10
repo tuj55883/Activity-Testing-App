@@ -1,10 +1,13 @@
 package edu.temple.assigment4;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -44,10 +47,13 @@ public class CustomAdapter extends BaseAdapter  {
         textView.setText(items[position]);
         textView.setTextSize(22);
         textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-        textView.setPadding(10,8,0,8);
+        textView.setPadding(0,8,8,8);
+        textView.setTextColor(Color.parseColor("#FF0000"));
 
 
 
+
+        textView.setLayoutParams(new GridView.LayoutParams(GridView.AUTO_FIT, 200));
 
 
 
@@ -55,10 +61,21 @@ public class CustomAdapter extends BaseAdapter  {
         //This sets the image to the left of the text
         Drawable img =context.getDrawable(bean_res_id[position]);
         img.setBounds(0, 0, 50, 50);
-        textView.setBackgroundResource(bean_res_id[position]);
+
+
+
+        textView.setBackground(img);
+
+
+
+
 
 
         return textView;
+
+
+
+
 
     }
 
@@ -72,6 +89,8 @@ public class CustomAdapter extends BaseAdapter  {
         Drawable img =context.getDrawable(bean_res_id[position]);
         img.setBounds(0, 0, 64, 74);
         pair.setCompoundDrawables(img, null, null, null);
+
+
 
 
         //Sets text

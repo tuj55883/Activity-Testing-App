@@ -55,40 +55,12 @@ public class SelectionActivity extends AppCompatActivity {
                 startActivity(launchIntent);
             }
 
-/*
-            @Override
-            public void onItemClickListener(AdapterView<?> parent, View view, int position, long id) {
-                Intent launchIntent = new Intent(SelectionActivity.this, DisplayActivity.class);
 
-                //show_image(position);
-
-                    launchIntent.putExtra("EXTRA_POSITION", position);
-                    startActivity(launchIntent);
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-
- */
         });
 
 
 
     }
 
-/*
-    public void onResume() {
-        super.onResume();
-        //When the user exits the image activity this just resets the spinner
-        String[] bean_array = new String[]{"Please Pick A Bean","Kidney Bean", "Black Bean", "Green Bean", "Mung Bean", "Pinto Bean"};
-        bean_res_id = new int[]{R.drawable.empty,R.drawable.bean,R.drawable.black_bean,R.drawable.green_bean,R.drawable.mung_bean,R.drawable.pinto};
-        CustomAdapter adapter = new CustomAdapter(this, bean_array,bean_res_id);
-        gridView.setAdapter(adapter);
-    }
-
-*/
 
 }

@@ -10,13 +10,19 @@
 
     <GridView
         android:id="@+id/gridView"
-        android:layout_width="303dp"
-        android:layout_height="243dp"
-        android:layout_marginBottom="216dp"
+        android:layout_width="340dp"
+        android:layout_height="334dp"
+        android:layout_marginBottom="88dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
         android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHeight_max="wrap"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView

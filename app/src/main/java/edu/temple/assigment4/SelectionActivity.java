@@ -17,7 +17,7 @@ public class SelectionActivity extends AppCompatActivity {
     int[] bean_res_id;
     CustomAdapter adapter;
     String[] bean_array;
-
+    //this is a test
 
 
     @Override

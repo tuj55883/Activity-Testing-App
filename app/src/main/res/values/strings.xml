@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Assigment 4</string>
     <string name="please_select_an_image_below">Please Select an Image Below</string>
+    <string name="selection_menu">Selection Menu</string>
+    <string name="display">Display</string>
+    <string-array name="beans">
+        <item>Kidney Bean</item>
+        <item>Black Bean</item>
+        <item>Green Bean</item>
+        <item>Mung Bean</item>
+        <item>Pinto Bean</item>
+    </string-array>
 </resources>

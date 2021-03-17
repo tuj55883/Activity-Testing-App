@@ -3,6 +3,7 @@ package edu.temple.assigment4;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -27,14 +28,15 @@ public class SelectionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Sets header
-        setTitle("Selection Menu");
+        setTitle(getString(R.string.selection_menu));
 
         //Sets the view to their id
         gridView = findViewById(R.id.gridView);
 
 
         //Makes the array of beans we use and the other array are the images
-        bean_array = new String[]{"Kidney Bean", "Black Bean", "Green Bean", "Mung Bean", "Pinto Bean"};
+        Resources res = getResources();
+        bean_array = res.getStringArray(R.array.beans);
         bean_res_id = new int[]{R.drawable.bean,R.drawable.black_bean,R.drawable.green_bean,R.drawable.mung_bean,R.drawable.pinto};
 
         //Uses custom image adapter class

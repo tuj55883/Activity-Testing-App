@@ -4,17 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:flow_horizontalAlign="start"
+    app:flow_verticalAlign="baseline"
     tools:context=".SelectionActivity">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="244dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="88dp"
-        android:textAlignment="center"
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="340dp"
+        android:layout_height="334dp"
+        android:layout_marginBottom="88dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.64"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHeight_max="wrap"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="179dp"
+        android:layout_height="137dp"
+        android:text="@string/please_select_an_image_below"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
 </androidx.constraintlayout.widget.ConstraintLayout>

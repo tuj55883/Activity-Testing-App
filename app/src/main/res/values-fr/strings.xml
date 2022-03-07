@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mission 4</string>
+    <string name="please_select_an_image_below">Veuillez sélectionner une image ci-dessous</string>
+    <string name="selection_menu">Menu de sélection</string>
+    <string name="display">Affichage</string>
+    <string-array name="beans">
+        <item>Haricot Rouge</item>
+        <item>Haricot Noir</item>
+        <item>Haricot Vert</item>
+        <item>Haricot Mungo</item>
+        <item>Haricot Pinto</item>
+    </string-array>
+</resources>
